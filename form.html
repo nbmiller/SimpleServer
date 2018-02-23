@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Assignment 2</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <script type="text/javascript" src="formAction.js"></script>
+</head>
+
+<body>
+   <header>
+      <!-- <img src="myLogo.png" class="logo"alt="My Logo" style="auto"> -->
+
+   </header>
+
+   <form id='myForm' method="POST" action='/'>
+      <div id="personForm" name="thisPerson" style="border: 1px solid black;padding: 15px;max-width:30%;">
+        <!-- <table style="border: 1px solid black;">
+          <tr> -->
+
+
+<img src="myLogo.png" class="logo"alt="My Logo" style="float: right;max-width:100px;max-height:100px;">
+        <label for="fName">First Name</label></br>
+       <input type="text" id="fName" placeholder="First Name" size="17" name="fName"></br>
+
+       <div id= "checkB" style="float: right;">
+       <input type="checkbox" name="gender" id="maleB"value="Male" checked> Male<br>
+     <input type="checkbox" name="gender" id= "femaleB"value="Female"> Female<br>
+     <input type="checkbox" name="gender" id="otherB"value="Other"> Other<br>
+     </br>Only Select One,<br> you aren't that special.
+     </div>
+
+       <label for="lName">Last Name</label></br>
+
+       <input type="text" id="lName" placeholder="Last Name" size="17" name="lName"></br>
+
+
+
+
+       <label for="bday">Birthday</label></br>
+       <input type="date" id="bday"  name="bday"></br>
+       <!-- <input type="date" name="bday"> -->
+       <label for="email">Email</label></br>
+       <input type="email" id="email" placeholder="Email" size="17" name="email">
+       </br>
+
+      <!-- </tr>
+      </table> -->
+
+     </div>
+     <div id="buttonGroup">
+       <input type="button" id="addMore" value="Add More" onclick="cloneForm()">
+       <input type="submit" id="submit" value="Submit" >
+     </div>
+   </form>
+
+   <footer>
+   		Close Inspect if this page displays strangely!</br>
+      &copy; Nick Miller - 2018
+   </footer>
+</body>
+</html>
